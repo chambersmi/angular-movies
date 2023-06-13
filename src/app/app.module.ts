@@ -34,7 +34,9 @@ import { MapComponent } from './utilities/map/map.component';
 import { FormMovieComponent } from './movies/form-movie/form-movie.component';
 import { MultipleSelectorComponent } from './utilities/multiple-selector/multiple-selector.component';
 import { ActorsAutocompleteComponent } from './actors/actors-autocomplete/actors-autocomplete.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { DisplayErrorsComponent } from './utilities/display-errors/display-errors.component'
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2'
 
 @NgModule({
   declarations: [
@@ -65,6 +67,7 @@ import { HttpClientModule } from '@angular/common/http'
     FormMovieComponent,
     MultipleSelectorComponent,
     ActorsAutocompleteComponent,
+    DisplayErrorsComponent,
 
   ],
   imports: [
@@ -76,7 +79,8 @@ import { HttpClientModule } from '@angular/common/http'
     FormsModule,
     LeafletModule,
     MarkdownModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

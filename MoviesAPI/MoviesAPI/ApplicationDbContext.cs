@@ -10,7 +10,8 @@ namespace MoviesAPI {
     }
 
     //Configure what tables we will have in our database
-    public DbSet<Genre> Genres { get; set; }
+    public DbSet<Actor> Genres { get; set; }
+    //public DbSet<Actor> Actors { get; set; }
 
   }
 }
